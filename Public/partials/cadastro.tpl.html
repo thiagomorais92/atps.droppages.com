@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+   <form class="form-signin">
+    <h2 class="form-signin-heading">Informe seus dados</h2>
+    
+    <div class="col-md-12 deprec">
+     <input class="form-control" required  type="text" name="nome"
+      ng-model="pessoa.nome" placeholder="Nome">
+    </div>
+    
+    <div class="col-md-6 deprec">
+     <input class="form-control cpf" id="cpf" type="text" required  name="cpf" ng-maxlength="14" ng-model="pessoa.cpf" ui-placeholder="CPF" placeholder="CPF" maxlength="14" required>
+    </div>
+    
+    <div class="col-md-6 deprec">
+     <input class="form-control idade" type="number"  name="idade" ng-model="pessoa.idade"  placeholder="Idade">
+    </div>
+    
+    <div class="col-md-6 deprec">
+     <label>Grau de escolaridade</label>
+     <select class="form-control"  ng-model="pessoa.escolaridade">
+       <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
+      <option value="Ensino fundamental completo">Ensino fundamental completo</option>
+      <option value="Ensino médio incompleto">Ensino médio incompleto</option>
+      <option value="Ensino médio completo">Ensino médio completo</option>
+      <option value="Ensino superior incompleto">Ensino superior incompleto</option>
+      <option value="Ensino superior completo">Ensino superior completo</option>
+     </select>
+    </div>
+
+    <div class="col-md-6 deprec">
+     <label>Renda Mensal</label>
+     <select class="form-control" ng-model="pessoa.renda">
+      <option value="Sem renda">Sem renda</option>
+      <option value="Um salário mínimo">Um salário mínimo</option>
+      <option value="até 3 salários mínimos">Asté 3 salários mínimos</option>
+      <option value="Entre 3 e 5 salários mínimos">Entre 3 e 5 salários mínimos</option>
+      <option value="Acima de 5 salários mínimos">Acima de 5 salários mínimos</option>
+     </select>
+    </div>
+    <div class="col-md-3 deprec">
+        <input type="checkbox" name="casa" ng-model="pessoa.moradia" value="true">Possui casa própria ? 
+     <button class="btn btn-lg btn-primary btn-block" ng-click="adiciona()" value="Adicionar">Adicionar</button>
+    </div><br/>
+       <div class="col-md-2 deprec">
+    </div>
+   </form>
+       <button class="btn btn-lg btn-primary btn-block" ng-click="listar()" value="Listar">Listar</button>
+  </div>
+ </div>

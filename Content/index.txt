@@ -1,0 +1,5 @@
+:Base
+Hello world
+===========
+
+My new home page.

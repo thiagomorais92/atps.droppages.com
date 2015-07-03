@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt" ng-app="Cadastro">
+<head>
+ <meta charset="UTF-8">
+ <title>Seja Digital - Governo Federal</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/brazil-fav.gif">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+ <header>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Seja Digital</h1>
+        </div>
+    </div>
+                                                                                                                                                                              </header>
+ 
+ <div class="container">
+  <!-- mudará de acordo com a rota -->
+        <ng-view>
+            <!-- templates do agular combase na rota -->
+        </ng-view>
+ </div>
+    <hr>
+ <footer>
+     <div class="container">
+      <img src="img/umpdtds.gif" width="100px">
+        <p>Governo Federal - 2015</p>
+     </div>
+ </footer>
+    <script src="vendor/angular.min.js"></script>
+ <script src="vendor/angular-route.min.js"></script>
+    <script src="vendor/angular-resource.min.js"></script>
+    <script src="main.js"></script>
+    <script src="services/services.js"></script>
+    <script src="controllers/cadastroController.js"></script>
+    <script src="controllers/listarController.js"></script>
+    <script src="jquery/jquery2.js"></script>
+    <script src="jquery/jquery.mask.js"></script>
+    <script src="ui-utils/ui-utils.min.js"></script>
+    <script src="ui-utils/ui-bootstrap-tpls-0.13.0.min.js"></script>
+</body>
+</html>
